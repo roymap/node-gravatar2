@@ -1,6 +1,6 @@
-# Gravatar Image and PRofile URL Builder
+# Gravatar Image and Profile URL Builder
 
-## Installation and tests
+## Installation and Tests
 Package name is `node-gravatar2`.
 
 ```bash
@@ -48,7 +48,7 @@ When no image exists for the supplied email, Gravatar will supply [this image](h
 
 ```javascript
 var image1Url = Gravatar('steve@apple.com').default('mm').avatar();
-var image2Url = Gravatar('bill@microsoft.com').default('http://example.com/images/avatar.jpg').avatar();
+var image2Url = Gravatar('bill@microsoft.com').default('http://foo.com/avatar.jpg').avatar();
 ```
 
 ### Rating
@@ -61,7 +61,7 @@ Gravatar allows users to self-rate their images so that they can indicate if an 
 * x: may contain hardcore sexual imagery or extremely disturbing violence.
 
 ```javascript
-var image1Url = Gravatar('steve@apple.com').rating('pg').avatar();
+var imageUrl = Gravatar('steve@apple.com').rating('pg').avatar();
 ```
 
 ### Secure Requests
@@ -69,5 +69,5 @@ var image1Url = Gravatar('steve@apple.com').rating('pg').avatar();
 If you're displaying Gravatars on a page that is being served over SSL, then you'll want to serve your Gravatars via SSL as well, otherwise you'll get annoying security warnings in most browsers. To do this, simply call the secure() method.
 
 ```javascript
-var image1Url = Gravatar('steve@apple.com').secure().avatar();
+var imageUrl = Gravatar('steve@apple.com').secure().avatar();
 ```
