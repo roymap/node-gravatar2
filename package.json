@@ -11,6 +11,10 @@
     "avatar",
     "profile"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roymap/node-gravatar2.git"
+  },
   "author": "Roy Pereira <roymap67@gmail.com>",
   "license": "ISC",
   "devDependencies": {
